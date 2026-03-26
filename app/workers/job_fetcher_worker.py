@@ -1,0 +1,1 @@
+from celery import Celery\n\napp = Celery('job_fetcher', broker='redis://localhost:6379/0')\n\n@app.task\ndef fetch_jobs_from_companies():\n    # Logic for fetching jobs from companies goes here.\n    # This could involve making HTTP requests to company APIs or scraping job boards.\n    pass\n\nif __name__ == '__main__':\n    fetch_jobs_from_companies.delay()

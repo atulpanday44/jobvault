@@ -1,1 +1,5 @@
-# Add your project dependencies here
+fastapi
+uvicorn
+sqlalchemy
+aiohttp
+docker
